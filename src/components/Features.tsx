@@ -5,22 +5,22 @@ export const Features = () => {
   const features = [
     {
       icon: <Code className="w-12 h-12" />,
-      title: "Low-Code Development",
+      title: "AI-Powered Automation",
       description: "Build powerful applications with minimal coding, perfect for rapid prototyping and deployment.",
     },
     {
       icon: <Zap className="w-12 h-12" />,
-      title: "Lightning Fast",
+      title: "Smart Order Processing",
       description: "Experience exceptional performance with our optimized runtime engine.",
     },
     {
       icon: <Heart className="w-12 h-12" />,
-      title: "User-Centric Design",
+      title: "Digital Catalog Builder",
       description: "Create beautiful, intuitive interfaces that your users will love.",
     },
     {
       icon: <Shield className="w-12 h-12" />,
-      title: "Enterprise Security",
+      title: "Secure Communications Hub",
       description: "Bank-grade security features to keep your applications and data safe.",
     },
   ];

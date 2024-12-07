@@ -36,9 +36,30 @@ export const Hero = () => {
               boxShadow: '4px 4px 0px #FF4747'
             }}
           >
-            Start Your Journey
+            Request a Demo
           </motion.button>
         </motion.div>
+      </div>
+
+      {/* Featured Section */}
+      <div className="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur-sm py-8">
+        <div className="container mx-auto">
+          <p className="text-white/70 text-sm uppercase tracking-wider mb-6 text-center">Featured in</p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center px-4">
+            {['TechPlunge', 'BFM Bouzeness', 'FIRED', 'La abdicazionica'].map((brand) => (
+              <motion.div
+                key={brand}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                className="text-white font-bold text-xl tracking-tight"
+                style={{ fontFamily: 'system-ui', textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}
+              >
+                {brand}
+              </motion.div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
