@@ -14,10 +14,10 @@ export const Logo = () => {
           initial={{ rotate: 0 }}
           animate={{ rotate: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="relative w-[72px] h-[72px]"
+          className="relative w-[120px] h-[120px]"
         >
           <img 
-            src="/lovable-uploads/f2661829-4c4d-4788-b592-4639d89707a3.png"
+            src="/lovable-uploads/4f3f1f3f-cbf2-402d-b6c7-d95f06833f2c.png"
             alt="Grenadine Glass"
             className="w-full h-full object-contain"
             style={{
