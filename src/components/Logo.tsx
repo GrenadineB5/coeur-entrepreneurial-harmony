@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { GlassWater } from "lucide-react";
+import { GlassWater, Heart } from "lucide-react";
 
 export const Logo = () => {
   return (
@@ -14,17 +14,26 @@ export const Logo = () => {
           initial={{ rotate: -10 }}
           animate={{ rotate: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-grenadine-500"
+          className="relative"
         >
-          <GlassWater size={64} className="transform -rotate-12 drop-shadow-[4px_4px_0px_rgba(255,71,71,0.3)]" 
+          <GlassWater 
+            size={72} 
+            className="transform -rotate-12 text-sunset-400"
+            style={{
+              filter: "drop-shadow(4px 4px 0px rgba(255,71,71,0.5))"
+            }}
+          />
+          <Heart 
+            size={32} 
+            className="absolute -top-2 -right-2 text-grenadine-500 transform rotate-12"
             style={{
               filter: "drop-shadow(2px 2px 0px #FFB347)"
             }}
           />
         </motion.div>
-        <h1 className="font-bold text-6xl md:text-7xl tracking-wider" style={{
+        <h1 className="font-black text-6xl md:text-7xl tracking-wider" style={{
           fontFamily: "'Arial Black', sans-serif",
-          background: "linear-gradient(45deg, #FF6B6B, #FFB347)",
+          background: "linear-gradient(135deg, #FF6B6B 0%, #FFB347 100%)",
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
           textShadow: "4px 4px 0px rgba(255, 71, 71, 0.3)",
@@ -40,7 +49,7 @@ export const Logo = () => {
           </span>
         </h1>
       </div>
-      <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-full h-1 bg-gradient-to-r from-transparent via-sunset-300 to-transparent"></div>
+      <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-full h-2 bg-gradient-to-r from-transparent via-sunset-300 to-transparent"></div>
     </motion.div>
   );
 };
