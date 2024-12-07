@@ -9,12 +9,12 @@ export const Logo = () => {
       transition={{ duration: 0.5 }}
       className="relative inline-block"
     >
-      <div className="flex flex-col items-center gap-4">
+      <div className="flex items-center gap-4">
         <motion.div
           initial={{ rotate: 0 }}
           animate={{ rotate: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="relative w-[120px] h-[120px]"
+          className="relative w-[72px] h-[72px]"
         >
           <img 
             src="/lovable-uploads/f2661829-4c4d-4788-b592-4639d89707a3.png"
@@ -25,7 +25,7 @@ export const Logo = () => {
             }}
           />
         </motion.div>
-        <h1 className="font-black text-3xl tracking-wider" style={{
+        <h1 className="font-black text-5xl tracking-wider" style={{
           fontFamily: "'Arial Black', sans-serif",
           background: "linear-gradient(135deg, #FF6B6B 0%, #FFB347 100%)",
           WebkitBackgroundClip: "text",
@@ -34,12 +34,6 @@ export const Logo = () => {
           letterSpacing: "0.15em",
         }}>
           GRENADINE
-          <span className="absolute -top-2 right-0 text-sm text-white bg-grenadine-500 px-2 py-0.5 rounded-full transform rotate-12 shadow-lg" style={{
-            fontFamily: "cursive",
-            textShadow: "1px 1px 0px #FF4747"
-          }}>
-            .ko
-          </span>
         </h1>
       </div>
       <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-full h-2 bg-gradient-to-r from-transparent via-sunset-300 to-transparent"></div>
