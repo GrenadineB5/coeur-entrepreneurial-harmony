@@ -26,27 +26,25 @@ export const Features = () => {
   ];
 
   return (
-    <section className="py-20 relative overflow-hidden" style={{
-      background: 'linear-gradient(45deg, #FF6B6B 0%, #FFB347 100%)',
-    }}>
+    <section className="py-20 relative overflow-hidden bg-retro-black">
       {/* Retro Grid Background */}
-      <div className="absolute inset-0" style={{
-        backgroundImage: 'linear-gradient(transparent 95%, rgba(255,255,255,0.2) 95%), linear-gradient(90deg, transparent 95%, rgba(255,255,255,0.2) 95%)',
-        backgroundSize: '20px 20px',
-        opacity: '0.2'
-      }}></div>
+      <div 
+        className="absolute inset-0"
+        style={{
+          backgroundImage: 'radial-gradient(circle at center, rgba(0,225,255,0.1) 0.5px, transparent 1px), linear-gradient(to right, rgba(255,30,138,0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,30,138,0.1) 1px, transparent 1px)',
+          backgroundSize: '20px 20px, 20px 20px, 20px 20px',
+        }}
+      ></div>
 
       <div className="container mx-auto px-4 relative">
         <div className="text-center mb-16">
-          <span className="text-white font-bold text-lg tracking-widest uppercase bg-grenadine-500 px-6 py-2 rounded-full inline-block mb-4 border-2 border-white shadow-lg">
+          <span className="text-retro-blue font-bold text-lg tracking-[0.3em] uppercase bg-retro-purple/20 px-6 py-2 rounded-full inline-block mb-4 border-2 border-retro-blue shadow-[0_0_20px_rgba(0,225,255,0.5)] animate-pulse">
             Our Solutions
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold mt-2 text-white mb-4" style={{
-            textShadow: '2px 2px 0px #FF4747, 4px 4px 0px #FFB347'
-          }}>
+          <h2 className="text-4xl md:text-5xl font-bold mt-2 text-white mb-4 animate-neon">
             Powerful Features
           </h2>
-          <div className="w-24 h-1 bg-white mx-auto rounded-full shadow-lg"></div>
+          <div className="w-24 h-1 bg-retro-pink mx-auto rounded-full shadow-[0_0_20px_rgba(255,30,138,0.5)]"></div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
@@ -56,16 +54,20 @@ export const Features = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.2 }}
-              className="bg-white/90 backdrop-blur-sm p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-grenadine-300"
+              className="bg-retro-purple/20 backdrop-blur-sm p-8 rounded-xl border-2 border-retro-pink hover:border-retro-blue transition-colors duration-300 group"
               style={{
-                boxShadow: '4px 4px 0px #FF4747'
+                boxShadow: '4px 4px 0px #00E1FF, 0 0 20px rgba(255,30,138,0.3)',
               }}
             >
-              <div className="text-grenadine-500 mb-6 bg-grenadine-100 p-4 rounded-lg inline-block">
+              <div className="text-retro-pink mb-6 bg-retro-purple/30 p-4 rounded-lg inline-block group-hover:text-retro-blue transition-colors duration-300">
                 {feature.icon}
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-grenadine-600">{feature.title}</h3>
-              <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+              <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-retro-blue transition-colors duration-300">
+                {feature.title}
+              </h3>
+              <p className="text-white/80 leading-relaxed">
+                {feature.description}
+              </p>
             </motion.div>
           ))}
         </div>
