@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Hero } from "@/components/Hero";
+import { Features } from "@/components/Features";
 import { Founders } from "@/components/Founders";
 
 const Index = () => {
@@ -10,6 +11,7 @@ const Index = () => {
       transition={{ duration: 0.5 }}
     >
       <Hero />
+      <Features />
       <Founders />
     </motion.div>
   );
