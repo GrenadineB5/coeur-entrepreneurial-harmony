@@ -54,15 +54,15 @@ export default {
         },
         retro: {
           purple: "#6B1FB1",
-          pink: "#FF1E8A",
-          blue: "#00E1FF",
-          yellow: "#FFD700",
-          orange: "#FF8C00",
+          pink: "#FF6B6B",
+          blue: "#4A90E2",
+          yellow: "#F5A623",
+          orange: "#E67E22",
           black: "#1A0F2E",
         },
       },
       backgroundImage: {
-        'retro-grid': "linear-gradient(to right, rgba(255,30,138,0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,30,138,0.1) 1px, transparent 1px)",
+        'retro-grid': "linear-gradient(to right, rgba(107,31,177,0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(107,31,177,0.1) 1px, transparent 1px)",
       },
       keyframes: {
         'fade-up': {
@@ -83,19 +83,10 @@ export default {
             opacity: "1",
           },
         },
-        'neon-pulse': {
-          '0%, 100%': { 
-            textShadow: '0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #FF1E8A, 0 0 82px #FF1E8A, 0 0 92px #FF1E8A, 0 0 102px #FF1E8A, 0 0 151px #FF1E8A'
-          },
-          '50%': { 
-            textShadow: '0 0 4px #fff, 0 0 7px #fff, 0 0 18px #fff, 0 0 38px #FF1E8A, 0 0 73px #FF1E8A, 0 0 80px #FF1E8A, 0 0 94px #FF1E8A, 0 0 140px #FF1E8A'
-          }
-        }
       },
       animation: {
         'fade-up': "fade-up 0.5s ease-out",
         'fade-in': "fade-in 0.3s ease-out",
-        'neon': 'neon-pulse 1.5s infinite',
       },
     },
   },
