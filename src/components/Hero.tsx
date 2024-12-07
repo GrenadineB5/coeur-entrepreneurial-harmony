@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Logo } from "./Logo";
+import { TechPlungeLogo, FiredLogo, BfmLogo, AbdicazionicaLogo } from "./BrandLogos";
 
 export const Hero = () => {
   return (
@@ -46,18 +47,38 @@ export const Hero = () => {
         <div className="container mx-auto">
           <p className="text-white/70 text-sm uppercase tracking-wider mb-6 text-center">Featured in</p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center px-4">
-            {['TechPlunge', 'BFM Bouzeness', 'FIRED', 'La abdicazionica'].map((brand) => (
-              <motion.div
-                key={brand}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
-                className="text-white font-bold text-xl tracking-tight"
-                style={{ fontFamily: 'system-ui', textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}
-              >
-                {brand}
-              </motion.div>
-            ))}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              className="text-white"
+            >
+              <TechPlungeLogo />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="text-white"
+            >
+              <BfmLogo />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="text-white"
+            >
+              <FiredLogo />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              className="text-white"
+            >
+              <AbdicazionicaLogo />
+            </motion.div>
           </div>
         </div>
       </div>
