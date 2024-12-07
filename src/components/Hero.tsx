@@ -26,7 +26,7 @@ export const Hero = () => {
           <p className="text-white text-xl mb-12 max-w-2xl mx-auto font-medium tracking-wide mt-8" style={{
             textShadow: '1px 1px 2px rgba(0,0,0,0.3)'
           }}>
-            Crafting tomorrow's software with yesterday's charm
+            Loose-Powered platform to digitize your B2B orders, automate repetitive tasks and boost sales
           </p>
           <motion.button
             whileHover={{ scale: 1.05 }}
