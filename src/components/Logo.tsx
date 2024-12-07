@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Heart } from "lucide-react";
 
 export const Logo = () => {
   return (
@@ -16,14 +15,17 @@ export const Logo = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="relative w-[120px] h-[120px]"
         >
-          <img 
-            src="/lovable-uploads/4f3f1f3f-cbf2-402d-b6c7-d95f06833f2c.png"
-            alt="Grenadine Glass"
-            className="w-full h-full object-contain"
-            style={{
-              filter: "drop-shadow(4px 4px 0px rgba(255,71,71,0.5))"
-            }}
-          />
+          {/* Retro Glass Icon */}
+          <div className="w-full h-full relative">
+            <div className="absolute inset-0 bg-gradient-to-br from-grenadine-400 to-sunset-300 rounded-full transform -rotate-12"></div>
+            <div className="absolute inset-2 bg-white/90 rounded-full transform -rotate-12">
+              <div className="absolute inset-3 bg-gradient-to-br from-grenadine-300 to-sunset-200 rounded-full">
+                <div className="absolute top-1/4 left-1/4 w-1/4 h-1/4 bg-white/80 rounded-full"></div>
+              </div>
+            </div>
+            {/* Straw */}
+            <div className="absolute top-0 right-1/3 w-2 h-3/4 bg-sunset-400 transform rotate-12"></div>
+          </div>
         </motion.div>
         <h1 className="font-black text-5xl tracking-wider" style={{
           fontFamily: "'Arial Black', sans-serif",
