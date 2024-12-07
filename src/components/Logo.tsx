@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Cocktail } from "lucide-react";
+import { GlassWater } from "lucide-react";
 
 export const Logo = () => {
   return (
@@ -16,7 +16,7 @@ export const Logo = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-grenadine-500"
         >
-          <Cocktail size={64} className="transform -rotate-12 drop-shadow-[4px_4px_0px_rgba(255,71,71,0.3)]" 
+          <GlassWater size={64} className="transform -rotate-12 drop-shadow-[4px_4px_0px_rgba(255,71,71,0.3)]" 
             style={{
               filter: "drop-shadow(2px 2px 0px #FFB347)"
             }}
