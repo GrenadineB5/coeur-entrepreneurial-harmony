@@ -1,25 +1,25 @@
 import { motion } from "framer-motion";
-import { Code, Zap, Heart, Shield } from "lucide-react";
+import { Printer, Guitar, Skull, User } from "lucide-react";
 
 export const Features = () => {
   const features = [
     {
-      icon: <Code className="w-12 h-12" />,
+      icon: <Printer className="w-12 h-12" />,
       title: "AI-printing catalogs",
       description: "Rediscover the joy of handing out your AI-generated catalogs personally, hand to hand.",
     },
     {
-      icon: <Zap className="w-12 h-12" />,
+      icon: <Guitar className="w-12 h-12" />,
       title: "Super Lolo",
       description: "Our intelligent agent, capable of playing a guitar tune for every order received by fax",
     },
     {
-      icon: <Heart className="w-12 h-12" />,
+      icon: <Skull className="w-12 h-12" />,
       title: "Margin destructivor",
       description: "The world's first feature that guarantees you'll never become profitable.",
     },
     {
-      icon: <Shield className="w-12 h-12" />,
+      icon: <User className="w-12 h-12" />,
       title: "Fax to Minitel integration",
       description: "We have developed powerful connectors to link tools from a nostalgic past.",
     },
