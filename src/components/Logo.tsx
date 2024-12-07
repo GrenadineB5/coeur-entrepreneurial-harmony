@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { GlassWater, Heart } from "lucide-react";
+import { Heart } from "lucide-react";
 
 export const Logo = () => {
   return (
@@ -14,20 +14,14 @@ export const Logo = () => {
           initial={{ rotate: -10 }}
           animate={{ rotate: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="relative"
+          className="relative w-[72px] h-[72px]"
         >
-          <GlassWater 
-            size={72} 
-            className="transform -rotate-12 text-sunset-400"
+          <img 
+            src="/lovable-uploads/f2661829-4c4d-4788-b592-4639d89707a3.png"
+            alt="Grenadine Glass"
+            className="w-full h-full object-contain transform -rotate-12"
             style={{
               filter: "drop-shadow(4px 4px 0px rgba(255,71,71,0.5))"
-            }}
-          />
-          <Heart 
-            size={32} 
-            className="absolute -top-2 -right-2 text-grenadine-500 transform rotate-12"
-            style={{
-              filter: "drop-shadow(2px 2px 0px #FFB347)"
             }}
           />
         </motion.div>
