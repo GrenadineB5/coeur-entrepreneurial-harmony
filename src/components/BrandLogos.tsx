@@ -8,8 +8,12 @@ export const TechPlungeLogo = () => (
 );
 
 export const FiredLogo = () => (
-  <motion.div className="font-bold text-3xl tracking-widest uppercase" style={{ fontFamily: 'serif' }}>
-    F I R E D
+  <motion.div className="font-bold text-3xl tracking-widest uppercase flex" style={{ fontFamily: 'serif' }}>
+    <span>F</span>
+    <span className="bg-white text-black px-1">I</span>
+    <span>R</span>
+    <span className="bg-white text-black px-1">E</span>
+    <span>D</span>
   </motion.div>
 );
 
