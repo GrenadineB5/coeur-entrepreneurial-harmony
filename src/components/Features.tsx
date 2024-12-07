@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { Printer, Guitar, Skull } from "lucide-react";
-import { SmokingPipe } from "./icons/SmokingPipe";
+import { Printer, Guitar, Skull, Snail } from "lucide-react";
 
 export const Features = () => {
   const features = [
@@ -20,7 +19,7 @@ export const Features = () => {
       description: "The world's first feature that guarantees you'll never become profitable.",
     },
     {
-      icon: <SmokingPipe className="w-12 h-12" />,
+      icon: <Snail className="w-12 h-12" />,
       title: "Fax to Minitel integration",
       description: "We have developed powerful connectors to link tools from a nostalgic past.",
     },
