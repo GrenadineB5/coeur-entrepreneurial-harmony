@@ -27,24 +27,67 @@ export const Features = () => {
 
   return (
     <section className="py-20 relative overflow-hidden bg-retro-black">
-      {/* Retro Grid Background */}
+      {/* Enhanced Retro Grid Background with Scanlines Effect */}
       <div 
-        className="absolute inset-0"
+        className="absolute inset-0 opacity-20"
         style={{
-          backgroundImage: 'radial-gradient(circle at center, rgba(0,225,255,0.1) 0.5px, transparent 1px), linear-gradient(to right, rgba(255,30,138,0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,30,138,0.1) 1px, transparent 1px)',
-          backgroundSize: '20px 20px, 20px 20px, 20px 20px',
+          backgroundImage: `
+            repeating-linear-gradient(
+              0deg,
+              transparent,
+              transparent 2px,
+              rgba(255, 107, 107, 0.1) 2px,
+              rgba(255, 107, 107, 0.1) 4px
+            ),
+            repeating-linear-gradient(
+              90deg,
+              transparent,
+              transparent 2px,
+              rgba(255, 107, 107, 0.1) 2px,
+              rgba(255, 107, 107, 0.1) 4px
+            )
+          `,
+          backgroundSize: '4px 4px',
         }}
-      ></div>
+      />
 
-      <div className="container mx-auto px-4 relative">
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <span className="text-retro-blue font-bold text-lg tracking-[0.3em] uppercase bg-retro-purple/20 px-6 py-2 rounded-full inline-block mb-4 border-2 border-retro-blue shadow-[0_0_20px_rgba(0,225,255,0.5)] animate-pulse">
+          <motion.span 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="text-retro-pink font-bold text-lg tracking-[0.3em] uppercase bg-retro-black/50 px-6 py-2 rounded-full inline-block mb-4 border-2 border-retro-pink"
+            style={{
+              textShadow: '2px 2px 0px rgba(255,107,107,0.3)',
+              boxShadow: '4px 4px 0px #FF6B6B, inset 2px 2px 10px rgba(255,107,107,0.2)',
+            }}
+          >
             Our Solutions
-          </span>
-          <h2 className="text-4xl md:text-5xl font-bold mt-2 text-white mb-4 animate-neon">
+          </motion.span>
+          
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="text-4xl md:text-5xl font-black mt-2 text-white mb-4"
+            style={{
+              textShadow: '4px 4px 0px rgba(255,107,107,0.5)',
+              letterSpacing: '0.1em',
+            }}
+          >
             Powerful Features
-          </h2>
-          <div className="w-24 h-1 bg-retro-pink mx-auto rounded-full shadow-[0_0_20px_rgba(255,30,138,0.5)]"></div>
+          </motion.h2>
+          
+          <motion.div 
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="w-24 h-1 bg-retro-pink mx-auto"
+            style={{
+              boxShadow: '0 0 20px rgba(255,107,107,0.5)',
+            }}
+          />
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
@@ -54,20 +97,30 @@ export const Features = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.2 }}
-              className="bg-retro-purple/20 backdrop-blur-sm p-8 rounded-xl border-2 border-retro-pink hover:border-retro-blue transition-colors duration-300 group"
+              className="bg-retro-black p-8 rounded-lg border-2 border-retro-pink group relative overflow-hidden"
               style={{
-                boxShadow: '4px 4px 0px #00E1FF, 0 0 20px rgba(255,30,138,0.3)',
+                boxShadow: '4px 4px 0px #FF6B6B',
               }}
             >
-              <div className="text-retro-pink mb-6 bg-retro-purple/30 p-4 rounded-lg inline-block group-hover:text-retro-blue transition-colors duration-300">
-                {feature.icon}
+              {/* Decorative Corner */}
+              <div className="absolute top-0 right-0 w-16 h-16 overflow-hidden">
+                <div className="absolute transform rotate-45 bg-retro-pink w-24 h-4 -right-6 top-6" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-retro-blue transition-colors duration-300">
-                {feature.title}
-              </h3>
-              <p className="text-white/80 leading-relaxed">
-                {feature.description}
-              </p>
+              
+              <div className="relative z-10">
+                <div className="text-retro-pink mb-6 bg-retro-black p-4 rounded-lg inline-block border border-retro-pink group-hover:scale-110 transition-transform duration-300">
+                  {feature.icon}
+                </div>
+                
+                <h3 className="text-2xl font-black mb-4 text-white group-hover:text-retro-pink transition-colors duration-300"
+                    style={{ textShadow: '2px 2px 0px rgba(255,107,107,0.3)' }}>
+                  {feature.title}
+                </h3>
+                
+                <p className="text-white/80 leading-relaxed">
+                  {feature.description}
+                </p>
+              </div>
             </motion.div>
           ))}
         </div>
