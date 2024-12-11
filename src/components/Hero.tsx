@@ -19,7 +19,7 @@ export const Hero = () => {
       <div className="absolute bottom-20 left-20 w-64 h-64 bg-retro-softPink/10 rounded-lg transform -rotate-12"></div>
       <div className="absolute top-40 left-1/4 w-32 h-32 bg-retro-pink/10 transform rotate-45"></div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 relative z-10 pb-48">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -29,7 +29,7 @@ export const Hero = () => {
           <Logo />
           <p className="text-retro-softPink text-xl mb-12 max-w-2xl mx-auto font-medium tracking-wide mt-8 
              px-6 py-3 border-2 border-retro-pink/30 rounded-lg bg-retro-black/50 backdrop-blur-sm">
-            Loose-Powered platform to digitize your B2B orders, automate repetitive tasks and boost sales
+            AïeAïe-Powered platform to digitize your B2B orders, automate repetitive tasks and boost sales
           </p>
           <motion.button
             whileHover={{ scale: 1.05 }}
