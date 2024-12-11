@@ -17,27 +17,26 @@ export const Founders = () => {
   ];
 
   return (
-    <section className="py-20 relative overflow-hidden" style={{
-      background: 'linear-gradient(-45deg, #FFB347 0%, #FF6B6B 100%)',
-    }}>
+    <section className="py-20 relative overflow-hidden bg-retro-black">
       {/* Retro Grid Background */}
-      <div className="absolute inset-0" style={{
-        backgroundImage: 'linear-gradient(transparent 95%, rgba(255,255,255,0.2) 95%), linear-gradient(90deg, transparent 95%, rgba(255,255,255,0.2) 95%)',
+      <div className="absolute inset-0 bg-retro-dots" style={{
         backgroundSize: '20px 20px',
         opacity: '0.2'
       }}></div>
 
       <div className="container mx-auto px-4 relative">
         <div className="text-center mb-16">
-          <span className="text-white font-bold text-lg tracking-widest uppercase bg-grenadine-500 px-6 py-2 rounded-full inline-block mb-4 border-2 border-white shadow-lg">
+          <span className="text-retro-softPink font-bold text-lg tracking-widest uppercase bg-retro-darkPink/20 
+                         px-6 py-2 rounded-full inline-block mb-4 border-2 border-retro-pink shadow-lg 
+                         backdrop-blur-sm">
             Our Leadership
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold mt-2 text-white mb-4" style={{
-            textShadow: '2px 2px 0px #FF4747, 4px 4px 0px #FFB347'
+          <h2 className="text-4xl md:text-5xl font-bold mt-2 text-retro-softPink mb-4" style={{
+            textShadow: '2px 2px 0px #FF4D8D, 4px 4px 0px #FF6B6B'
           }}>
             Meet Our Founders
           </h2>
-          <div className="w-24 h-1 bg-white mx-auto rounded-full shadow-lg"></div>
+          <div className="w-24 h-1 bg-retro-pink mx-auto rounded-full shadow-lg"></div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
@@ -47,21 +46,22 @@ export const Founders = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.2 }}
-              className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg border-2 border-grenadine-300 transform hover:-translate-y-2 transition-all duration-300"
+              className="bg-retro-black/90 backdrop-blur-sm rounded-xl p-8 shadow-lg 
+                       border-2 border-retro-pink transform hover:-translate-y-2 transition-all duration-300"
               style={{
-                boxShadow: '4px 4px 0px #FF4747'
+                boxShadow: '4px 4px 0px #FF4D8D'
               }}
             >
-              <div className="aspect-square mb-6 overflow-hidden rounded-xl border-4 border-white shadow-lg">
+              <div className="aspect-square mb-6 overflow-hidden rounded-xl border-4 border-retro-softPink shadow-lg">
                 <img
                   src={founder.image}
                   alt={founder.name}
                   className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <h3 className="text-3xl font-bold mb-2 text-grenadine-600">{founder.name}</h3>
-              <p className="text-grenadine-400 font-bold text-lg mb-4 uppercase tracking-wider">{founder.role}</p>
-              <p className="text-gray-600 leading-relaxed">{founder.bio}</p>
+              <h3 className="text-3xl font-bold mb-2 text-retro-pink">{founder.name}</h3>
+              <p className="text-retro-softPink font-bold text-lg mb-4 uppercase tracking-wider">{founder.role}</p>
+              <p className="text-retro-softPink/80 leading-relaxed">{founder.bio}</p>
             </motion.div>
           ))}
         </div>

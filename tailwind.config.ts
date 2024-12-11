@@ -59,10 +59,15 @@ export default {
           yellow: "#F5A623",
           orange: "#E67E22",
           black: "#1A0F2E",
+          mint: "#98D8D0",
+          cream: "#FFF6E9",
+          softPink: "#FFD4E5",
+          darkPink: "#FF4D8D",
         },
       },
       backgroundImage: {
         'retro-grid': "linear-gradient(to right, rgba(107,31,177,0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(107,31,177,0.1) 1px, transparent 1px)",
+        'retro-dots': "radial-gradient(rgba(255,77,141,0.15) 1px, transparent 1px)",
       },
       keyframes: {
         'fade-up': {
