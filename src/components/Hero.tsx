@@ -29,7 +29,7 @@ export const Hero = () => {
           <Logo />
           <p className="text-retro-softPink text-xl mb-12 max-w-2xl mx-auto font-medium tracking-wide mt-8 
              px-6 py-3 border-2 border-retro-pink/30 rounded-lg bg-retro-black/50 backdrop-blur-sm">
-            Loose-Powered platform to digitize your B2B orders, automate repetitive tasks and boost sales
+            Aïe-Aïe powered platform to digitize your B2B orders, automate repetitive tasks and boost sales
           </p>
           <motion.button
             whileHover={{ scale: 1.05 }}
