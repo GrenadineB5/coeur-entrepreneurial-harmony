@@ -6,13 +6,13 @@ export const Founders = () => {
       name: "Laurent Voulzy",
       role: "Chief Executive Officer",
       image: "/lovable-uploads/3f301f08-37e8-4fc8-bf81-0ebc191dcdb3.png",
-      bio: "Visionary leader with a passion for innovative software solutions and a deep appreciation for timeless design.",
+      bio: "After graduating from ESC Roubaix, one of the best business schools in the world at age 32, and working at E&Y, one of the best strategy consulting firms in the world (together with McKinsey), Laurent became a serial entrepreneur as he consecutively launched 12 unsuccessful startups and feels now ready and equipped for big success. He has systematically displayed a unique ability to generate negative margins, while being frugal as he likes to remind everyone that he has raised very little VC money until now despite a strong network built in that industry thanks to his unpaid internship at Tier 4 Ventures.\n\nFavorite quote: \"Whoever slaps you on your right cheek, turn the other to him also\"\nFavorite song: Loser by Beck.",
     },
     {
       name: "Alain Souchon",
       role: "Chief Technology Officer",
       image: "/lovable-uploads/4eb089ae-7c34-4d5a-92b9-5d03d6cc8015.png",
-      bio: 'Alain "refactoring" Souchon is a primary school dropout, a self-taught engineer from Le Wagonnet with a strong 10-year experience at some of the best tech companies in the world (barista at Google, yoga teacher at Palantir, janitor at Mistral, etc.). He comes from a line of reputed engineers and some even suggest that one of his ancestors worked on the construction of the Titanic.\n\nFavorite quote: "AI is a big opportunity".\nFavorite song: It\'s gonna be me by Technical Debt',
+      bio: "Alain \"refactoring\" Souchon is a primary school dropout, a self-taught engineer from Le Wagonnet with a strong 10-year experience at some of the best tech companies in the world (barista at Google, yoga teacher at Palantir, janitor at Mistral, etc.). He comes from a line of reputed engineers and some even suggest that one of his ancestors worked on the construction of the Titanic.\n\nFavorite quote: \"AI is a big opportunity\".\nFavorite song: It's gonna be me by Technical Debt",
     },
   ];
 
