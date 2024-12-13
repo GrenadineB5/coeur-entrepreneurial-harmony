@@ -26,6 +26,6 @@ export const BfmLogo = () => (
 
 export const AbdicazionicaLogo = () => (
   <motion.div className="font-bold italic text-xl">
-    La abdicazionica
+    La Abdicazionica
   </motion.div>
 );
