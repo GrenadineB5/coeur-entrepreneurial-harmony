@@ -5,8 +5,8 @@ export const Features = () => {
   const features = [
     {
       icon: <Printer className="w-12 h-12" />,
-      title: "AI-printing catalogs",
-      description: "Rediscover the joy of handing out your AI-generated catalogs personally, hand to hand.",
+      title: "pAIper catalogs",
+      description: "Rediscover the joy of handing out your pAIper catalogs personally, hand to hand.",
     },
     {
       icon: <Guitar className="w-12 h-12" />,
